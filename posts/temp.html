@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+<title>二级菜单，响应鼠标</title>
+<style type="text/css">
+.mainNav ul li {float: left;width: 150px;}
+.mainNav li ul {display: none;}
+li.hover ul {display: block;}
+</style>
+<script language="javascript" type="text/javascript">
+ function showSubLevel(Obj){
+  Obj.className="hover";
+ }
+ function hideSubLevel(Obj){
+  Obj.className="";
+ }
+</script>
+</head>
+<body>
+<div class="mainNav">
+ <ul>
+ <li onmouseover="showSubLevel(this)" onmouseout="hideSubLevel(this)"> 一级栏目A
+ <ul>
+ <li>A的二级栏目</li>
+ <li>A的二级栏目</li>
+ <li>A的二级栏目</li>
+ </ul>
+ </li>
+ <li onmouseover="showSubLevel(this)" onmouseout="hideSubLevel(this)"> 一级栏目B
+ <ul>
+ <li>B的二级栏目</li>
+ <li>B的二级栏目</li>
+ <li>B的二级栏目</li>
+ </ul>
+ </li>
+ <li onmouseover="showSubLevel(this)" onmouseout="hideSubLevel(this)"> 一级栏目C
+ <ul>
+ <li>B的二级栏目</li>
+ <li>B的二级栏目</li>
+ <li>B的二级栏目</li>
+ </ul>
+ </li>
+ </ul>
+</div>
+</body>
+</html>

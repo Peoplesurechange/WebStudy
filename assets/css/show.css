@@ -1,0 +1,57 @@
+.top-bar{
+	height:50px;
+	background: #000;
+	color:#fff;
+	position:absolute;
+	left:0px;
+	top:0px;
+	right:0px;
+	/*z-index:999;*/
+	width:100%;
+	
+}
+.top-logo{
+	margin: 10px 0 0 20px;
+	width: 80px;
+	height: 30px;
+	float: left;
+}
+.top-search{
+	margin: 10px 0 0 10px;
+	border-radius: 2px;
+	padding: 15px 10px;
+	height:14px;
+	font-size:12px;
+	width: 130px;
+	border:0;
+	background: #3D3D3D;
+	float:left;
+	/*position: absolute;
+	left: 120px;
+	top: 10px;*/
+	color:#fff;
+}
+/*.top-submit{
+	height:32px;
+	position: absolute;
+    left:240px;	
+    top:10px;
+    width: 30px;
+    border: 0px;
+    background: url(img/top-search.bmp);
+	}*/
+.top-login{
+	margin: 13px 5px 0;
+	padding: 0 5px;
+	float: right;
+	color:#fff;			
+	text-decoration: none;
+	}
+.top-login:hover{
+	margin: 13px 5px 0;
+	padding: 0 5px;
+	float: right;
+	color:#fff;			
+	text-decoration: underline;
+	}
+	

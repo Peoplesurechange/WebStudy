@@ -5,14 +5,19 @@
 		<title>遇见心动美食 - 食遇记</title>
 		<link rel="stylesheet" type="text/css" href="assets/css/index.css"/>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="stylesheet" href="http://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
-		<script src="http://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
-		<script src="http://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
-		<script src="assets/js/loginJudge.js"></script>
+		<script language="javascript" type="text/javascript">
+ 		function showSubLevel(Obj){
+  		Obj.className="hover";
+ 		}
+ 		function hideSubLevel(Obj){
+  		Obj.className="";
+ 		}
+		</script>
+		
 	</head>
 	<body>
 		<header class="top-bar">
-			<div ><a href="index.html"><img src="assets/img/top_title.jpg"  alt="食遇记"  class="top-logo"/></a></div>
+			<div ><a href="/"><img src="assets/img/top_title.jpg"  alt="食遇记"  class="top-logo"/></a></div>
 			
 			<div id="top-search">
 				<form action="" >
@@ -24,33 +29,11 @@
 			</div>
 			
 		</header>
-		<div id="myCarousel" class="carousel slide">
-			<!-- 轮播（Carousel）指标 -->
-			<ol class="carousel-indicators">
-				<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-				<li data-target="#myCarousel" data-slide-to="1"></li>
-				<li data-target="#myCarousel" data-slide-to="2"></li>
-			</ol>   
-			<!-- 轮播（Carousel）项目 -->
-			<div class="carousel-inner">
-				<div class="item active">
-					<img src="assets/img/45546-1628868.jpg" style="height: 380px;width:100%;" alt="First slide">
-				</div>
-				<div class="item">
-					<img src="assets/img/331-13837.jpg" style="height: 380px;width:100%;" alt="Second slide">
-				</div>
-				<div class="item">
-					<img src="assets/img/64695-2679221.jpg" style="height: 380px;width:100%;" alt="Third slide">
-				</div>
-			</div>
-		</div> 
-		
-		
-		<!--<div >
+		<div >
 			
 			<img src="assets/img/45546-1628868.jpg" class="banners"  alt="不小心丢失啦"/>
 			
-		</div>-->
+		</div>
 		<div>
 			<img src="assets/img/logo.png" alt="不小心丢失啦" class="logo"/>
 		</div>
@@ -59,8 +42,42 @@
 			<a href="#">美食手册</a>|
 			<a href="#">我要分享</a>
 		</nav>
+		<div class="mainNav">
+	 	<ul>
+			<li onmouseover="showSubLevel(this)" onmouseout="hideSubLevel(this)"> 
+				发现美食|
+				 <ul>
+				 <li>二级栏目</li>
+				 <li>二级栏目</li>
+				 <li>二级栏目</li>
+				 </ul>
+			</li>
+			<li onmouseover="showSubLevel(this)" onmouseout="hideSubLevel(this)"> 
+				 <a href="#" >美食手册</a>|
+				 <ul>
+				 <li onmouseover="showSubLevel(this)" onmouseout="hideSubLevel(this)>
+				 	<ul>
+					 <li>三级栏目</li>
+					 <li>三级栏目</li>
+					 <li>三级栏目</li>
+					</ul>
+				 </li>
+				 <li>二级栏目</li>
+				 <li>二级栏目</li>
+				 </ul>
+			</li>
+			<li onmouseover="showSubLevel(this)" onmouseout="hideSubLevel(this)"> 
+				我要分享
+				 <ul>
+				 <li>二级栏目</li>
+				 <li>二级栏目</li>
+				 <li>二级栏目</li>
+				 </ul>
+			 </li>
+		 </ul>
+		</div>
+	<br/>
 		<hr/>
-		<!--<a    href="https:www.baidu.com"    onclick="window.open('','_blank','scrollbars=0,resizable=0;width=300');return    false">oksad</a>-->
 		
 		<!--分类
 		<form action="">
@@ -161,7 +178,5 @@
 			<a href="#">友情链接</a>
 			<a href="#">联系我们</a>
 		</footer>
-		
 	</body>
-	
 </html>

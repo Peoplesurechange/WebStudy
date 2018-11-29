@@ -5,26 +5,27 @@
 		<title>登录</title>
 		<link rel="stylesheet" type="text/css" href="assets/css/index.css"/>
 		<link rel="stylesheet" type="text/css" href="assets/css/login.css" />
+		<script src="assets/js/loginJudge.js"></script>
 	</head>
-	<body>
+	<body onload="checkCookie()">
 		<header class="top-bar">
 			<div ><a href="index.html"><img src="assets/img/top_title.jpg"  alt="食遇记"  class="top-logo"/></a></div>
 			
 			<div id="top-search">
 				<form action="" >
-					<input type="text" placeholder="搜索" class="top-search" />
+					<input type="text" placeholder="搜索" class="top-search" style="height: 14px;"/>
 				</form>
 			</div>
 			<div id="top-login">
-				<a href="login.html" class="top-login ">登录</a>
+				<a href="login.html" class="top-login "id="condition">登录</a>
 			</div>
 		</header>
 		<br /><br /><br/>
 		<div style="position:relative;">
 			<div class="login-form">
-			<form >
-			用户名<input type="text"/><br />
-			密&nbsp;&nbsp;&nbsp;&nbsp;码<input type="password" /><br />
+			<form onsubmit="">
+			用户名<input type="text" name="user"/><br />
+			密&nbsp;&nbsp;&nbsp;&nbsp;码<input type="password" name="password" /><br />
 			<input type="submit" value="登陆" style="position: relative;left:80px;top:20px;"/>
 			<input type="button" value="注册"style="position: relative;left:80px;top:20px;" onclick="window.location.href='register.html'" />
 			</form>
