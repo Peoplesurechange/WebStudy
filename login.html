@@ -8,6 +8,7 @@
 		<script src="assets/js/loginJudge.js"></script>
 	</head>
 	<body onload="checkCookie()">
+		
 		<header class="top-bar">
 			<div ><a href="index.html"><img src="assets/img/top_title.jpg"  alt="食遇记"  class="top-logo"/></a></div>
 			
@@ -21,24 +22,19 @@
 			</div>
 		</header>
 		<br /><br /><br/>
-		<div style="position:relative;">
-			<div class="login-form">
-			<form onsubmit="">
-			用户名<input type="text" name="user"/><br />
-			密&nbsp;&nbsp;&nbsp;&nbsp;码<input type="password" name="password" /><br />
-			<input type="submit" value="登陆" style="position: relative;left:80px;top:20px;"/>
-			<input type="button" value="注册"style="position: relative;left:80px;top:20px;" onclick="window.location.href='register.html'" />
-			</form>
+		<div class="login-form">
+			<div class="inform">
+			<form  onsubmit="userWrite(this)" action="login.html">
+			<p><span class="para-name">用户名</span><input type="text" name="user" id="contentInput"/></p>
+			<p><span class="para-name">密码</span><input type="password" name="password" id="contentInput"/></p>
+			<span class="para-name"></span><input type="submit" value="登陆" class="button" style="margin-right: 50px;"/>
+			<input type="button" value="注册" onclick="window.location.href='register.html'"  class="button"/>
 			
+			<!--<br />-->
+			<!--<input type="button" onclick="reset()">重置失败？-->
+			</form>
 			</div>
 		</div>
 			
-
-		
-		
-		
-			
-	
-
 	</body>
 </html>

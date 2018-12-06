@@ -1,15 +1,32 @@
 .login-form{
-	/*position: absolute;
-	top:0;
-	right:0;
-	bottom:0;
-	left: 0;*/
+
 	margin:auto auto;
-	width:400px;
-	height: 1000px;
-	
+	width:600px;
+	height: 600px;
+/*	border:  solid 1px;*/
 
 }
-input{
+.inform{
+	border: dotted 1px;
+	margin-top: 40%;
+	border-radius: 20px;
+	box-shadow: none;
+	
+}
+#contentInput{
+	width:400px;
+	height:50px;
+	font-size: 50px;
+	border-radius: 5px;
+}
+.button{
+	width:80px;
+	height:50px;
+}
 
+.para-name{
+	display: inline-block;
+	width:150px;
+	text-align: right;
+	font-size: 50px;
 }

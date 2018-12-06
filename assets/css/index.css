@@ -76,7 +76,7 @@ body {
 .nav{
 	text-align:center;
 	width: 30%;
-	margin: 0 auto;
+	margin: auto;
 	font-size: 20px;
 }
 
@@ -153,31 +153,25 @@ li.hover ul {
 	/*border-style:solid;
 	border-width: 1px;*/
 	
-	width:1000px;
-	height: 400px;
+	width:1200px;
+	height: 220px;
 	margin: 0 auto;
 	padding: 0;
+}
+.article1:first-child{
+	margin-left: 70px;
 }
 .article1{
 	/*border-style:solid;
 	border-width: 1px;*/
 	
 	float: left;
-	width: 400px;
+	width: 250px;
 	/*width:40%;*/
 	height:100%;
-	margin: 0 0 0 70px;
+	margin: 0 20px 0 0;
 }
-.article2{
-	/*border-style:solid;
-	border-width: 1px;*/
-	
-	float: right;
-	width:400px;
-	/*width:40%;*/
-	height:100%;
-	margin: 0 70px 0 0;
-}
+
 .inArtcle{
 	/*border-style:solid;
 	border-width: 1px;*/
@@ -187,16 +181,34 @@ li.hover ul {
 
 }
 .inArticleImg{
-	width:400px;
-		border-radius: 10px;
+	width:250px;
+	height:166.5px;
+	border-radius: 10px;
 }
 .articleTitle{
+	font-size: 25px;
 	padding: 0px;
 	margin :5px 0 0 0;
 }
 .aritcleDescription{
+	font-size:12px;
 	padding: 0px;
 	margin: 0px;
+}
+.gototop{
+	width:30px;
+	height:30px;
+	position: fixed;
+	right: 70px;
+	bottom: 50px;
+}
+.gototopfont{
+	font-size:10px;
+	width:20px;
+	height:30px;
+	position: fixed;
+	right: 75px;
+	bottom: 20px;
 }
 footer{
 	width:50%;

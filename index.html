@@ -9,8 +9,10 @@
 		<script src="http://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
 		<script src="http://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
 		<script src="assets/js/loginJudge.js"></script>
-	</head>
-	<body>
+		<link rel="icon" href="./favicon.ico" type="image/x-icon"/>
+		<link rel="bookmark" href="/favicon.ico"/>
+		</head>
+	<body onload="checkCookie()">
 		<header class="top-bar">
 			<div ><a href="index.html"><img src="assets/img/top_title.jpg"  alt="食遇记"  class="top-logo"/></a></div>
 			
@@ -20,9 +22,9 @@
 				</form>
 			</div>
 			<div id="top-login">
-				<a href="login.html" class="top-login " style="">登录</a>
+				<a href="login.html" class="top-login" id="condition" style="">登录</a>
 			</div>
-			
+		
 		</header>
 		<div id="myCarousel" class="carousel slide">
 			<!-- 轮播（Carousel）指标 -->
@@ -51,15 +53,16 @@
 			<img src="assets/img/45546-1628868.jpg" class="banners"  alt="不小心丢失啦"/>
 			
 		</div>-->
+	
 		<div>
 			<img src="assets/img/logo.png" alt="不小心丢失啦" class="logo"/>
 		</div>
 		<nav class="nav">
 			<a href="index.html">发现美食</a>|
 			<a href="#">美食手册</a>|
-			<a href="#">我要分享</a>
+			<a href="login.html">我要分享</a>
 		</nav>
-		<hr/>
+		<hr style="margin-top:5px" />
 		<!--<a    href="https:www.baidu.com"    onclick="window.open('','_blank','scrollbars=0,resizable=0;width=300');return    false">oksad</a>-->
 		
 		<!--分类
@@ -71,12 +74,11 @@
 			</select>
 		</form>-->
 		
-		<br />
 		<div class="article">
-			<div class="article1">
+			<div class="article1" >
 				<div class="inArticle">
 					<a href="#">
-						<img src="assets/img/hangzjuanji.jpg" class="inArticleImg" alt="" />
+						<img src="assets/img/1hangzjuanji.jpg" class="inArticleImg" alt="" />
 					</a>
 				</div>
 				<h1 align="center" class="articleTitle">杭帮菜</h1>
@@ -85,43 +87,39 @@
 					<img src=""/>
 				</a>
 			</div>
-			
-			<div class="article2">
-				<div  class="inArticle">
+			<div class="article1">
+				<div class="inArticle">
 					<a href="#">
-						<img src="assets/img/sichuan.jpg" class="inArticleImg" alt="" />
+						<img src="assets/img/2sichuan.jpg" class="inArticleImg" alt="" />
 					</a>
 				</div>
 				<h1 align="center" class="articleTitle">川菜</h1>
-				<p align="center"class="aritcleDescription">口水鸡</p>
+				<p align="center" class="aritcleDescription">口水鸡</p>
 				<a>
 					<img src=""/>
 				</a>
 			</div>
-		</div>
-		
-		<div class="article">
+			
 			<div class="article1">
-				<div class="inArticle">
+				<div  class="inArticle">
 					<a href="#">
-						<img src="assets/img/shandongcaixi.jpg" class="inArticleImg" alt="" />
+						<img src="assets/img/3shandongcaixi.jpg" class="inArticleImg" alt="" />
 					</a>
 				</div>
 				<h1 align="center" class="articleTitle">鲁菜</h1>
-				<p align="center" class="aritcleDescription">锅塌豆腐</p>
+				<p align="center"class="aritcleDescription">锅塌豆腐</p>
 				<a>
 					<img src=""/>
 				</a>
 			</div>
-			
-			<div class="article2">
+			<div class="article1">
 				<div  class="inArticle">
 					<a href="#">
-						<img src="assets/img/sichuan.jpg" class="inArticleImg" alt="" />
+						<img src="assets/img/4duojiaoyutou.jpg" class="inArticleImg" alt="" />
 					</a>
 				</div>
 				<h1 align="center" class="articleTitle">川菜</h1>
-				<p align="center"class="aritcleDescription">口水鸡</p>
+				<p align="center"class="aritcleDescription">剁椒鱼头</p>
 				<a>
 					<img src=""/>
 				</a>
@@ -129,32 +127,241 @@
 		</div>
 		
 		<div class="article">
+			<div class="article1" >
+				<div class="inArticle">
+					<a href="#">
+						<img src="assets/img/5糖醋里脊.jpg" class="inArticleImg" alt="" />
+					</a>
+				</div>
+				<h1 align="center" class="articleTitle">浙菜</h1>
+				<p align="center" class="aritcleDescription">糖醋里脊</p>
+				<a>
+					<img src=""/>
+				</a>
+			</div>
 			<div class="article1">
 				<div class="inArticle">
 					<a href="#">
-						<img src="assets/img/hangzjuanji.jpg" class="inArticleImg" alt="" />
+						<img src="assets/img/6dongporou.jpg" class="inArticleImg" alt="" />
 					</a>
 				</div>
-				<h1 align="center" class="articleTitle">杭帮菜</h1>
-				<p align="center" class="aritcleDescription">杭州卷鸡</p>
+				<h1 align="center" class="articleTitle">浙菜</h1>
+				<p align="center" class="aritcleDescription">东坡肉</p>
 				<a>
 					<img src=""/>
 				</a>
 			</div>
 			
-			<div class="article2">
+			<div class="article1">
 				<div  class="inArticle">
 					<a href="#">
-						<img src="assets/img/sichuan.jpg" class="inArticleImg" alt="" />
+						<img src="assets/img/7youmenchunsun.jpg" class="inArticleImg" alt="" />
 					</a>
 				</div>
-				<h1 align="center" class="articleTitle">川菜</h1>
-				<p align="center"class="aritcleDescription">口水鸡</p>
+				<h1 align="center" class="articleTitle">浙菜</h1>
+				<p align="center"class="aritcleDescription">油焖春笋</p>
+				<a>
+					<img src=""/>
+				</a>
+			</div>
+			<div class="article1">
+				<div  class="inArticle">
+					<a href="#">
+						<img src="assets/img/8longjingxiaren.jpg" class="inArticleImg" alt="" />
+					</a>
+				</div>
+				<h1 align="center" class="articleTitle">浙菜</h1>
+				<p align="center"class="aritcleDescription">龙井虾仁</p>
 				<a>
 					<img src=""/>
 				</a>
 			</div>
 		</div>
+		
+		<div class="article">
+			<div class="article1" >
+				<div class="inArticle">
+					<a href="#">
+						<img src="assets/img/9feicuishaomai.jpg" class="inArticleImg" alt="" />
+					</a>
+				</div>
+				<h1 align="center" class="articleTitle">苏菜</h1>
+				<p align="center" class="aritcleDescription">翡翠烧卖</p>
+				<a>
+					<img src=""/>
+				</a>
+			</div>
+			<div class="article1">
+				<div class="inArticle">
+					<a href="#">
+						<img src="assets/img/10qingdunshizitou.jpg" class="inArticleImg" alt="" />
+					</a>
+				</div>
+				<h1 align="center" class="articleTitle">苏菜</h1>
+				<p align="center" class="aritcleDescription">清炖狮子头</p>
+				<a>
+					<img src=""/>
+				</a>
+			</div>
+			
+			<div class="article1">
+				<div  class="inArticle">
+					<a href="#">
+						<img src="assets/img/11qiancengyougao.jpg" class="inArticleImg" alt="" />
+					</a>
+				</div>
+				<h1 align="center" class="articleTitle">苏菜</h1>
+				<p align="center"class="aritcleDescription">千层油糕</p>
+				<a>
+					<img src=""/>
+				</a>
+			</div>
+			<div class="article1">
+				<div  class="inArticle">
+					<a href="#">
+						<img src="assets/img/12bawangbieji.jpg" class="inArticleImg" alt="" />
+					</a>
+				</div>
+				<h1 align="center" class="articleTitle">苏菜</h1>
+				<p align="center"class="aritcleDescription">霸王别姬</p>
+				<a>
+					<img src=""/>
+				</a>
+			</div>
+		</div>
+		
+		<div class="article">
+			<div class="article1" >
+				<div class="inArticle">
+					<a href="#">
+						<img src="assets/img/13baozaifan.jpg" class="inArticleImg" alt="" />
+					</a>
+				</div>
+				<h1 align="center" class="articleTitle">粤菜</h1>
+				<p align="center" class="aritcleDescription">煲仔饭</p>
+				<a>
+					<img src=""/>
+				</a>
+			</div>
+			<div class="article1">
+				<div class="inArticle">
+					<a href="#">
+						<img src="assets/img/14boluogulurou.jpg" class="inArticleImg" alt="" />
+					</a>
+				</div>
+				<h1 align="center" class="articleTitle">粤菜</h1>
+				<p align="center" class="aritcleDescription">菠萝咕噜肉</p>
+				<a>
+					<img src=""/>
+				</a>
+			</div>
+			
+			<div class="article1">
+				<div  class="inArticle">
+					<a href="#">
+						<img src="assets/img/15jinguaniangyuni.jpg" class="inArticleImg" alt="" />
+					</a>
+				</div>
+				<h1 align="center" class="articleTitle">粤菜</h1>
+				<p align="center"class="aritcleDescription">金瓜酿芋泥</p>
+				<a>
+					<img src=""/>
+				</a>
+			</div>
+			<div class="article1">
+				<div  class="inArticle">
+					<a href="#">
+						<img src="assets/img/16xiandanzhengroubing.jpg" class="inArticleImg" alt="" />
+					</a>
+				</div>
+				<h1 align="center" class="articleTitle">粤菜</h1>
+				<p align="center"class="aritcleDescription">咸蛋蒸肉饼</p>
+				<a>
+					<img src=""/>
+				</a>
+			</div>
+		</div>
+		
+		<div class="article">
+			<div class="article1" >
+				<div class="inArticle">
+					<a href="#">
+						<img src="assets/img/17basiyutou.jpg" class="inArticleImg" alt="" />
+					</a>
+				</div>
+				<h1 align="center" class="articleTitle">徽菜</h1>
+				<p align="center" class="aritcleDescription">拔丝芋头</p>
+				<a>
+					<img src=""/>
+				</a>
+			</div>
+			<div class="article1">
+				<div class="inArticle">
+					<a href="#">
+						<img src="assets/img/18huizhoudouhuangguo.jpg" class="inArticleImg" alt="" />
+					</a>
+				</div>
+				<h1 align="center" class="articleTitle">徽菜</h1>
+				<p align="center" class="aritcleDescription">徽州豆黄馃</p>
+				<a>
+					<img src=""/>
+				</a>
+			</div>
+			
+			<div class="article1">
+				<div  class="inArticle">
+					<a href="#">
+						<img src="assets/img/19yipinguo.jpg" class="inArticleImg" alt="" />
+					</a>
+				</div>
+				<h1 align="center" class="articleTitle">徽菜</h1>
+				<p align="center"class="aritcleDescription">一品锅</p>
+				<a>
+					<img src=""/>
+				</a>
+			</div>
+			<div class="article1">
+				<div  class="inArticle">
+					<a href="#">
+						<img src="assets/img/20xiangguhe.jpg" class="inArticleImg" alt="" />
+					</a>
+				</div>
+				<h1 align="center" class="articleTitle">徽菜</h1>
+				<p align="center"class="aritcleDescription">香菇盒</p>
+				<a>
+					<img src=""/>
+				</a>
+			</div>
+		</div>
+		<div >
+			<a href="#"><img src="assets/img/xiangshangjiantou.png" class="gototop" id="gotop"/></a>
+			<a href="#"><p class="gototopfont" id="gotop">返回顶部</p></a>
+			
+		</div>
+		<script>
+			$(document).ready(function(){
+				$(".gototop").hide();
+				$(".gototopfont").hide();
+				$(document).ready(function(){
+					$(window).scroll(function(){
+						if($(window).scrollTop()>50){
+							$(".gototop").fadeIn(300);
+							$(".gototopfont").fadeIn(300);
+						}else{
+							$(".gototop").fadeOut(300);
+							$(".gototopfont").fadeOut(300);
+						}
+					});
+					$(".gototop").click(function(){
+						$(body,html).animate({scrollTop:0},100);
+					})
+					$(".gototopfont").click(function(){
+						$(body,html).animate({scrollTop:0},100);
+					})
+					
+				})
+			})
+		</script>
 		<footer class="footer" align="center">
 			<a href="#">意见反馈</a>
 			<a href="#">关于我们</a>

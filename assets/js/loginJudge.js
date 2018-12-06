@@ -18,16 +18,26 @@ function getCookie(cname){
 function checkCookie(){
 	var user=getCookie("username");
 	if (user!=""){
-		document.getElementById("condition").innerText("欢迎您"+user+"！");
+		document.getElementById("condition").innerHTML="欢迎您 "+user+" ！";
+		
 	}
 	else {
-		document.getElementById("condition").innerText("登陆");
+		document.getElementById("condition").innerHTML="登录";
 //		user = prompt("请输入你的名字:","");
 //		if (user!="" && user!=null){
 //  		setCookie("username",user,10);
 //  	}
 	}
 }
+//function reset(){
+//	setCookie("username","",100);
+//}
 function userWrite(form){
-	
+	user=form.user.value.trim();
+	if (user!="" && user!=null){
+		var seconds=prompt("需要保持登录状态多久？（秒）");
+		alert("提示:保持登录"+seconds+"秒");
+    		setCookie("username",user,seconds);
+    		
+    	}
 }
