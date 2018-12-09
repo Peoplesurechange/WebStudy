@@ -37,7 +37,6 @@ function userWrite(form){
 	if (user!="" && user!=null){
 		var seconds=prompt("需要保持登录状态多久？（秒）");
 		alert("提示:保持登录"+seconds+"秒");
-    		setCookie("username",user,seconds);
-    		
+		setCookie("username",user,seconds);
     	}
 }

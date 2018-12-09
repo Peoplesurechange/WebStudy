@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html >
+	<head>
+		<link rel="icon" href="./favicon.ico" type="image/x-icon"/>
+		<meta charset="UTF-8">
+		<script src="ejs/ejs.min.js"></script>
+		<script type="text/javascript" src="../assets/js/jquery-3.3.1.js"></script>
+		<script type="text/javascript" src="../assets/js/jquery-3.3.1.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="../assets/css/index.css"/>
+	</head>
+	<body>
+	
+	<div id="main"></div>
+
+	<script>
+	   var post = {title:'我的博文',content:'博文内容',links:['<a href="./posts/32"> 相关文章一<a>','...']};
+	
+	    $.get("show.tpl", function(result){
+	      var html = ejs.compile(result)(post);
+	      $("#main").html(html);
+	    });
+	
+	</script>
+	</body>
+</html>
