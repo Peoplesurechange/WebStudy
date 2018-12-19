@@ -1,8 +1,8 @@
 
 <header class="top-bar" style="position:fixed;">
-	<div ><a href="index.html"><img src="../assets/img/top_title.jpg"  alt="食遇记"  class="top-logo"/></a></div>
+	<div ><a href="../index.html"><img src="../assets/img/top_title.jpg"  alt="食遇记"  class="top-logo"/></a></div>
 	
-	<div id="top-search" ">
+	<div id="top-search">
 		<form action="" >
 			<input type="text" placeholder="搜索" class="top-search" style="margin-top:8px;height:18px;"/>
 		</form>

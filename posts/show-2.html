@@ -1,43 +1,118 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<meta charset="utf-8">
-		<title></title>
-		<!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
-		<link rel="stylesheet" href="../assets/css/bootstrap.min.css"/>
-		<link rel="stylesheet" href="../assets/css/bootstrap-theme.min.css"/>
-		<link rel="stylesheet" href="../assets/css/show.css"/>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+		<link rel="stylesheet" type="text/css" href="../assets/css/index.css"/>
+		<script type="text/javascript" src="../assets/js/jquery-3.3.1.js"></script>
+		<script type="text/javascript" src="../assets/js/jquery-3.3.1.min.js"></script>
+		<link rel="icon" href="./favicon.ico" type="image/x-icon"/>
+		<title>食遇记-口水鸡</title>
 	</head>
 	<body>
-		<header class="top-bar">
+		<header class="top-bar" style="position:fixed;"><!--导航头-->
 			<div ><a href="../index.html"><img src="../assets/img/top_title.jpg"  alt="食遇记"  class="top-logo"/></a></div>
 			
 			<div id="top-search">
-				<form action="" >
-					<input type="text" placeholder="搜索" class="top-search" />
+				<form action="">
+					<input type="text" placeholder="搜索" class="top-search"/>
 				</form>
 			</div>
 			<div id="top-login">
-				<a href="../login.html" class="top-login " style="">登录</a>
+				<a href="../login.html" class="top-login" id="condition" style="">登录</a>
 			</div>
-			
+		
 		</header>
-		<br /><br /><br /><br /><br /><br /><br /><br /><br />
-		<div class="container">
-			<div class="row">
-				<div class="col-md-2">
-					
-				</div>
-				<div class="col-md-5">
-					jkl
-				</div>
-				<div class="col-md-3">
-					jkl
-				</div>
-				<div class="col-md-2">
-					
-				</div>
-			</div>
+		<div id="npbs" height="50px" width="100%" ><!--占据因为导航栏空出来的部分-->
+			<p style="margin-bottom: 0px;">食遇记</p>
+			<p>遇见心动美食</p>
 		</div>
+		<div class="row"><!--栅格分页-->
+		  <div class="col-md-9"  style="border-right: solid 1px;">
+		  	<h1 style="display: inline;">口水鸡</h1>
+		  	<div style="position: absolute;top:0;left:165px;"><span style="font-size: 10px;">喜欢</span><br /><img src="../assets/img/shoucang.png" width="20px" class="like"/></div>
+		  	<div style="position: absolute;top:0;left:200px;"><span style="font-size: 10px;">收藏</span><br /><img src="../assets/img/shoucang1.png" width="19px" class="like1"/></div>
+		  	<br /><div style="position:relative;top:0;left:50px;font-family:'楷体';font-weight: 600;">川菜</div>
+		  	
+		  	<div><img src="../assets/img/2sichuan.jpg"  width="500px" height="333px" style="border-radius: 1px;"/></div>
+		  
+		  	
+		  	
+		  	<script>
+		  	
+		  		$(document).ready(function(){
+					$(".like").click(
+					function(){
+							$(this).attr("src","../assets/img/yishoucang.png");
+					})		
+   				});		
+   				$(document).ready(function(){
+					$(".like1").click(
+					function(){
+							$(this).attr("src","../assets/img/yishoucang1.png");
+					})		
+   				});
+   				
+   				
+
+//				$(".like").toggle(function(){
+//					$(this).attr("../assets/img/yishoucang.png");
+//				},function(){
+//					$(this).attr("src","../assets/img/shoucang.png");
+//					}).attr("src","../assets/img/shoucang.png");
+		  	</script>
+		  	<p>
+		  		口水鸡是中国四川传统特色菜肴，属于川菜系中的凉菜，佐料丰富，集麻辣鲜香嫩爽于一身。 在烹制时，煮鸡用的汤料很有讲究，需要恰到好处，这样可以最大限度地保存鸡的可溶性蛋白，增加鸡肉的鲜美程度，又能具备其特有的香型和滋味。
+				口水鸡是一道凉菜，佐料丰富，集麻辣鲜香嫩爽于一身。有“名驰巴蜀三千里，味压江南十二州”的美称。“口水鸡”这名字初听感觉有点不雅，脑子里可能会出现一副口水滴哒的样子，之所以叫口水鸡还因为有很多花椒，吃了会麻到嘴巴瘫痪不由自主流口水。
+		  
+		  	</p>
+		  	<h2>烹饪方法</h2>
+		  	<p>	
+		  		<ol>
+		  			<li>鸡洗净，斩成块。在水即将烧开前，把葱姜料酒都加到锅里。水开后放入鸡煮10分钟。煮的时间不要太长，这样鸡肉比较嫩煮好的鸡要立刻放到凉水里，最好是冰水里激一下。这样皮质细腻紧滑，脆脆的不容易散烂。</li>
+					<li>葱姜蒜洗净，切碎。起锅，倒入油，待6成热时，放入葱姜蒜碎，爆炒出香味，关火，冲入辣椒粉中，沉淀后沥出的油就是红油了。（备注：如果没有过滤网，将葱姜蒜捞出后，再将油冲入辣椒粉中。）
+						将鸡肉从冰水中取出沥干，切成小块，放入盘中。</li>
+					<li>将酱油、盐、糖、醋混合两勺红油、搅拌均匀后、淋在鸡肉上面。根据你自己的口味、可以配一些
+					香菜、香葱、芝麻。如果没有，不加也行。</li>
+		  		</ol>
+		  		
+		  	</p>
+		  	
+		  	
+		  	
+		  </div>
+		  <div class="col-md-3" align="center" >
+		  	<p>推荐美食</p>
+		  	
+		  	<a href="https://www.xinshipu.com/zuofa/75869">新食谱口水鸡</a><br/><br>
+		  	<a href="http://www.baidu.com">口水鸡</a><br/><br>
+		  	<a href="https://jingyan.baidu.com/article/dca1fa6f837d25f1a44052f9.html">川味口水鸡</a><br/><br>
+		  	<a href="show-3.html">锅塌豆腐</a>
+		  </div>
+		  
+		</div>
+
+		<div align="center"><!--页底按钮-->
+			<nav aria-label="Page navigation">
+			  <ul class="pagination">
+			    <li>
+			      <a href="show-1.html" aria-label="Previous">
+			        <span aria-hidden="true">&laquo;</span>
+			      </a>
+			    </li>
+			    <li><a href="show-1.html">1</a></li>
+			    <li class="active"><a href="show-2.html" >2</a></li>
+			    <li ><a href="show-3.html">3</a></li>
+			    <li><a href="#">4</a></li>
+			    <li><a href="#">5</a></li>
+			    <li>
+			      <a href="show-3.html" aria-label="Next">
+			        <span aria-hidden="true">&raquo;</span>
+			      </a>
+			    </li>
+			  </ul>
+			</nav>
+		</div>
+		
 	</body>
 </html>

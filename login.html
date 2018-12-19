@@ -8,7 +8,7 @@
 		<link rel="stylesheet" href="assets/css/login.css" />
 		<link rel="icon" href="./favicon.ico" type="image/x-icon"/>
 		<script src="assets/bootstrap/js/bootstrap.min.js"></script>
-
+		<link rel="stylesheet" type="text/css" href="assets/css/index.css"/>
 		<script>
 			$(document).ready(function() {
 				//打开会员登录 
@@ -76,9 +76,27 @@
 	</head>
 
 	<body style="background-color: #fff;">
-
-		<a id="Login_start_" class="btn btn-danger" style="width:100px;height:40px;border-radius: 0; position:absolute;left:43%;bottom: 130px;">我要登录</a>
-		<a id="Regist_start_" class="btn btn-success" style="width:100px;height:40px;border-radius: 0;position:absolute;left:51%;bottom: 130px;">我要注册</a>
+		<header class="top-bar">
+			<div ><a href="index.html"><img src="assets/img/top_title.jpg"  alt="食遇记"  class="top-logo"/></a></div>
+			
+			<div id="top-search">
+				<form action="" >
+					<input type="text" placeholder="搜索" class="top-search" />
+				</form>
+			</div>
+			<div id="top-login">
+				<a href="login.html" class="top-login" id="condition" style="">登录</a>
+			</div>
+		
+		</header>
+		<br /><br /><br/>
+		<div style="position:absolute;left:30px">
+			<img src="assets/img/shangjiantou.png"  style="width:50px"/>
+			<br/>
+			返回首页
+		</div>
+		<a id="Login_start_" class="btn btn-danger" style="width:100px;height:40px;border-radius: 0; position:absolute;left:43%;bottom: 100px;">我要登录</a>
+		<a id="Regist_start_" class="btn btn-success" style="width:100px;height:40px;border-radius: 0;position:absolute;left:51%;bottom: 100px;">我要注册</a>
 
 
 		<!-- 会员登录  -->

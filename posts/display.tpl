@@ -1,15 +1,3 @@
-<!DOCTYPE html>
-<html>
-	<head>
-		<meta charset="UTF-8">
-		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-		<link rel="stylesheet" type="text/css" href="../assets/css/index.css"/>
-		<script type="text/javascript" src="../assets/js/jquery-3.3.1.js"></script>
-		<script type="text/javascript" src="../assets/js/jquery-3.3.1.min.js"></script>
-		<link rel="icon" href="./favicon.ico" type="image/x-icon"/>
-		<title>食遇记-锅塌豆腐</title>
-	</head>
-	<body>
 		<header class="top-bar" style="position:fixed;"><!--导航头-->
 			<div ><a href="../index.html"><img src="../assets/img/top_title.jpg"  alt="食遇记"  class="top-logo"/></a></div>
 			
@@ -29,10 +17,10 @@
 		</div>
 		<div class="row"><!--栅格分页-->
 		  <div class="col-md-9"  style="border-right: solid 1px;">
-		  	<h1 style="display: inline;">锅塌豆腐</h1>
+		  	<h1 style="display: inline;"> <%= name %> </h1>
 		  	<div style="position: absolute;top:0;left:165px;"><span style="font-size: 10px;">喜欢</span><br /><img src="../assets/img/shoucang.png" width="20px" class="like"/></div>
 		  	<div style="position: absolute;top:0;left:200px;"><span style="font-size: 10px;">收藏</span><br /><img src="../assets/img/shoucang1.png" width="19px" class="like1"/></div>
-		  	<br /><div style="position:relative;top:0;left:50px;font-family:'楷体';font-weight: 600;">山东菜</div>
+		  
 		  	
 		  	<div><img src="../assets/img/3shandongcaixi.jpg"  width="500px" height="333px" style="border-radius: 1px;"/></div>
 		  
@@ -62,7 +50,7 @@
 //					}).attr("src","../assets/img/shoucang.png");
 		  	</script>
 		  	<p>
-		  		锅塌豆腐是山东经典的特色名菜之一，属于鲁菜。锅塌是鲁菜独有的一种烹调方法，它可做鱼，也可做肉，还可做豆腐和蔬菜。
+		  		<%= discription %>锅塌豆腐是山东经典的特色名菜之一，属于鲁菜。锅塌是鲁菜独有的一种烹调方法，它可做鱼，也可做肉，还可做豆腐和蔬菜。
 		  		豆腐经过调料浸渍，蘸蛋液经油煎，加以鸡汤微火塌制，十分入味，又可称为“锅塌豆腐夹馅”，成菜呈深黄色，外形整齐，入口鲜香，营养丰富。
 		  
 		  	</p>
@@ -90,13 +78,13 @@
 			<nav aria-label="Page navigation">
 			  <ul class="pagination">
 			    <li>
-			      <a href="show-2.html" aria-label="Previous">
+			      <a href="#" aria-label="Previous">
 			        <span aria-hidden="true">&laquo;</span>
 			      </a>
 			    </li>
-			    <li><a href="show-1.html">1</a></li>
-			    <li><a href="show-2.html">2</a></li>
-			    <li class="active"><a href="show-2.html">3</a></li>
+			    <li><a href="#">1</a></li>
+			    <li><a href="#">2</a></li>
+			    <li class="active"><a href="#">3</a></li>
 			    <li><a href="#">4</a></li>
 			    <li><a href="#">5</a></li>
 			    <li>
@@ -109,4 +97,58 @@
 		</div>
 		
 	</body>
-</html>
+<header class="top-bar" style="position:fixed;">
+	<div ><a href="../index.html"><img src="../assets/img/top_title.jpg"  alt="食遇记"  class="top-logo"/></a></div>
+	
+	<div id="top-search">
+		<form action="" >
+			<input type="text" placeholder="搜索" class="top-search" style="margin-top:8px;height:18px;"/>
+		</form>
+	</div>
+	<div id="top-login">
+		<a href="../login.html" class="top-login" id="condition" style="">登录</a>
+	</div>
+
+</header>
+<br><br>
+
+
+
+<h1> <%= title %> </h1>
+<p> <%= content %> </p>
+<ul>
+	<% links.forEach(function(link){ %>
+	  <li><%= link %></li>
+	<% }) %>
+</ul>
+
+<p>asdsadad</p>
+<p>asdsadad</p>
+<p>asdsadad</p>
+<p>asdsadad</p>
+<p>asdsadad</p>
+<p>asdsadad</p>
+<p>asdsadad</p>
+<p>asdsadad</p>
+<p>asdsadad</p>
+<p>asdsadad</p>
+<p>asdsadad</p>
+<p>asdsadad</p>
+<p>asdsadad</p>
+<p>asdsadad</p>
+<p>asdsadad</p>
+<p>asdsadad</p>
+<p>asdsadad</p>
+<p>asdsadad</p>
+<p>asdsadad</p>
+<p>asdsadad</p><p>asdsadad</p>
+<p>asdsadad</p>
+<p>asdsadad</p>
+<p>asdsadad</p>
+<p>asdsadad</p>
+<p>asdsadad</p>
+<p>asdsadad</p>
+<p>asdsadad</p>
+<p>asdsadad</p>
+<p>asdsadad</p>
+
