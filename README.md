@@ -29,5 +29,5 @@
 * 传统的中规中矩的html css JavaScript
 * bootstrap实现轮播图和栅格布局
 * jquery库
-* jquery插件库www.jq22.com/search
+* jquery插件库https://www.jq22.com/search
 * ejs模板引擎 https://ejs.bootcss.com/
