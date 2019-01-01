@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<script src="ejs/ejs.min.js"></script>
+		<script type="text/javascript" src="../assets/js/jquery-3.3.1.js"></script>
+		<script type="text/javascript" src="../assets/js/jquery-3.3.1.min.js"></script>
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+		<link rel="stylesheet" type="text/css" href="../assets/css/index.css"/>
+		<link rel="icon" href="./favicon.ico" type="image/x-icon"/>
+		<title></title>
+	</head>
+	<body>
+		<div id="main">
+		</div>
+		<script>
+				   var post={
+				   				name:'剁椒鱼头',
+				   				belong:'湘菜',
+				   				src:"../assets/img/4duojiaoyutou.jpg",
+				   				description:"通常以鳙鱼鱼头、剁椒为主料，配以豉油、姜、葱、蒜等辅料蒸制而成。菜品色泽红亮、味浓、肉质细嫩。肥而不腻、口感软糯、鲜辣适口。2018年9月10日，“中国菜”正式发布，“剁椒鱼头“被评为“中国菜”湖南十大经典名菜。",
+				   				cookMethod:"1.将鱼头洗净，从鱼唇正中剖开，在鱼头下面鱼肉较厚的部分斜划几刀。2.将料酒、胡椒粉、盐撒在鱼头上，抹匀，腌制约20分钟。3.将高度白酒倒入剁椒中，拌匀备用。	4.在腌制好的鱼头表面淋上少许油，抹匀。5.将姜切片、葱切段，铺在碗底。6.再放上处理好的鱼头。7.然后将步骤3的剁椒铺在鱼头上。8.蒸锅内放入适量的水，烧开，然后摆入鱼头，盖盖，大火隔水足汽蒸约10分钟。9.将蒸好后的鱼头取出，倒去碗内多余的汤汁，撒上葱花，淋入蒸鱼豉油，然后将适量的油烧热，泼在上面即可。"				
+				   			};
+			
+			    $.get("show.tpl", function(result){
+			      var html = ejs.compile(result)(post);
+			      $("#main").html(html);
+			    });
+		
+		</script>
+	</body>
+</html>

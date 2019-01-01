@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<script src="ejs/ejs.min.js"></script>
+		<script type="text/javascript" src="../assets/js/jquery-3.3.1.js"></script>
+		<script type="text/javascript" src="../assets/js/jquery-3.3.1.min.js"></script>
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+		<link rel="stylesheet" type="text/css" href="../assets/css/index.css"/>
+		<link rel="icon" href="./favicon.ico" type="image/x-icon"/>
+		<title></title>
+	</head>
+	<body>
+		<div id="main">
+		</div>
+		<script>
+				   var post={
+				   				name:'龙井虾仁',
+				   				belong:'浙菜',
+				   				src:"../assets/img/8longjingxiaren.jpg",
+				   				description:"龙井虾仁因选用清明节前后的龙井茶配以虾仁制作而得名，是一道具有浓厚地方风味的杭州名菜。成菜后，虾仁白嫩、茶叶翠绿，色泽淡雅，味美清口。",
+				   				cookMethod:"做法一[食材]活河虾600克，龙井新茶5克，鸡蛋1个，淀粉10克，黄酒、盐适量。[步骤]1.将河虾挤出虾肉，用清水反复清洗，至雪白，沥干水分。2.盛到碟中，放入盐和蛋清，用筷子搅拌至有粘性，加入淀粉，腌制1小时。3.茶用开水泡开，备用。热锅放入油，滑开虾仁后盛出。4.用葱炝锅，放入虾仁，再加入黄酒、茶叶和茶水，迅速颠炒半分钟即可出锅"								   			};
+		
+			    $.get("show.tpl", function(result){
+			      var html = ejs.compile(result)(post);
+			      $("#main").html(html);
+			    });
+		
+		</script>
+	</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<script src="ejs/ejs.min.js"></script>
+		<script type="text/javascript" src="../assets/js/jquery-3.3.1.js"></script>
+		<script type="text/javascript" src="../assets/js/jquery-3.3.1.min.js"></script>
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+		<link rel="stylesheet" type="text/css" href="../assets/css/index.css"/>
+		<link rel="icon" href="./favicon.ico" type="image/x-icon"/>
+		<title></title>
+	</head>
+	<body>
+		<div id="main">
+		</div>
+		<script>
+				   var post={
+				   				name:'糖醋里脊',
+				   				belong:'浙菜',
+				   				src:"../assets/img/5糖醋里脊.jpg",
+				   				description:"糖醋里脊是经典传统名菜之一，以猪里脊肉为主材，配以面粉、淀粉、醋等佐料，酸甜可口，让人食欲大开。",
+				   				cookMethod:"食材主料：里脊肉250克，食用油500克（实耗50克）辅料：鸡蛋1个，香葱1棵，生姜1小块，面粉适量，淀粉适量。调料：香油1小匙，高汤1/2大匙，料酒1/2大匙，香醋2大匙，白糖2大匙，精盐1小匙。烹饪方法1.鸡蛋打入碗内；2.肉洗净切片，放入鸡蛋液中，加水、淀粉、面粉抓匀；3.葱、姜洗净切末；4.碗内放料酒、 糖、香醋、盐、葱、姜、淀粉、高汤兑成芡汁；5.锅内放油，烧至五成热，下入肉片，炸至焦脆，捞出沥油；6.锅内留底油，烹入芡汁，倒入肉片，炒匀，淋香油即可。口感甜酸可口， 外焦里嫩，口齿留香，回味无穷。技巧里脊要多炸几遍，注意火候，否则达不到外焦里嫩的效果。"				
+				   			};
+			
+			    $.get("show.tpl", function(result){
+			      var html = ejs.compile(result)(post);
+			      $("#main").html(html);
+			    });
+		
+		</script>
+	</body>
+</html>

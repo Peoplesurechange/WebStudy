@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<script src="ejs/ejs.min.js"></script>
+		<script type="text/javascript" src="../assets/js/jquery-3.3.1.js"></script>
+		<script type="text/javascript" src="../assets/js/jquery-3.3.1.min.js"></script>
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+		<link rel="stylesheet" type="text/css" href="../assets/css/index.css"/>
+		<link rel="icon" href="./favicon.ico" type="image/x-icon"/>
+		<title></title>
+	</head>
+	<body>
+		<div id="main">
+		</div>
+		<script>
+				   var post={
+				   				name:'油焖春笋',
+				   				belong:'浙菜',
+				   				src:"../assets/img/7youmenchunsun.jpg",
+				   				description:"“油焖春笋”是一道特色传统风味菜肴，属浙菜系。它选用清明前后出土的嫩春笋，以重油、重糖烹制而成，色泽红亮，鲜嫩爽口，鲜咸而带甜味，百吃不厌。",
+				   				cookMethod:"油焖春笋的家常做法"
+											+"【材料】春笋400克、里脊肉80克、豆豉20克、大蒜2瓣、葱1克、料酒、生抽1/2茶匙、黄豆酱1汤匙、麻油1茶匙、油、盐适量【做法】里脊肉切丝，用料酒、生抽腌制7分钟。2.春笋剥去外皮，洗净后切丝，焯水备用。大蒜切末，葱切葱花。豆豉洗净备用。3.锅中倒入油，烧至四成热，爆香蒜末和豆豉，放入肉丝翻炒约2分钟。4.放入春笋丝和黄豆酱翻炒至熟，出锅前加入盐、麻油调味，撒上葱花即可。[油焖春笋的多种做法]油焖春笋是杭州传统名菜，此菜营养丰富，咸鲜适口，大家不妨做来尝一尝。油焖春笋的做法也有很多种，每种做法都各有特色。如果你想知道油焖春笋怎么做最合胃口，就接着往下看吧。下面我就把油焖春笋的几种不同做法介绍如下，供朋友们作为参考。希望大家都能做出美味可口的油焖春笋。油焖春笋一：春笋，青椒，生抽，白糖，香油，鸡粉，盐少许。春笋洗净，去皮，笋肉切细条。如果用袋装的就方便多了，直接切条即可；青椒洗净切成与春笋大小一致的细条。将切好的春笋在沸水中焯一下取出。炒锅倒油烧热，放入春笋翻炒，加生抽，白糖，开水，旺火烧开，小火焖10分钟，待汤汁稠干时，下入青椒大火翻炒，加少许盐，炒匀，出锅前淋入香油即可。油焖春笋二：春笋200克，酱油25克，白砂糖20克，味精15克，盐5克，植物油50克。将春笋切成5厘米长的条，把油锅烧至七成热，将春笋倒入拉油至春笋水分基本收干后倒出。锅留底油烧热倒入春笋，再加老抽，糖，味精和适量水，用小火焖烧至水分基本收干后，淋些明油装盘即可。油焖春笋三：酱油75毫升，芝麻油15毫升，生净笋肉500克，白糖25克，花椒10粒，味精1.5克，色拉油75毫升。将笋肉洗净，对剖开，用刀拍松，切成五厘米长的段。将炒锅置中火上烧热，下色拉油至130度左右时，放入花椒，炸香后捞出，将春笋入锅煸炒至色呈微黄时，即加入酱油、白糖和水100毫升，用小火烧五分钟，待汤汁收浓时，放入味精，淋上芝麻油即成。油焖春笋四：春笋500克，花椒10粒，糖、酱油、香油各适量。将笋肉洗净，对剖开，用刀拍松，切成1．5寸长的段。烧热锅，下油至五成熟时，放入花椒粒炸香后捞去，将春笋段入锅煸炒至色呈微黄时，加入酱油、糖和适量水，用大火煮滚，改用小火烤5分钟，待汤汁收浓时，放入味精，淋上香油即可。"				
+				   			};
+			
+			    $.get("show.tpl", function(result){
+			      var html = ejs.compile(result)(post);
+			      $("#main").html(html);
+			    });
+		
+		</script>
+	</body>
+</html>

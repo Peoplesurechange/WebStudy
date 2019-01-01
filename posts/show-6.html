@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<script src="ejs/ejs.min.js"></script>
+		<script type="text/javascript" src="../assets/js/jquery-3.3.1.js"></script>
+		<script type="text/javascript" src="../assets/js/jquery-3.3.1.min.js"></script>
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+		<link rel="stylesheet" type="text/css" href="../assets/css/index.css"/>
+		<link rel="icon" href="./favicon.ico" type="image/x-icon"/>
+		<title></title>
+	</head>
+	<body>
+		<div id="main">
+		</div>
+		<script>
+				   var post={
+				   				name:'东坡肉',
+				   				belong:'浙菜',
+				   				src:"../assets/img/6dongporou.jpg",
+				   				description:"东坡肉，又名滚肉、东坡焖肉，是眉山和江南地区特色传统名菜。东坡肉在浙菜、川菜、鄂菜等菜系中都有，且各地做法也有不同，有先煮后烧的，有先煮后蒸的，有直接焖煮收汁的。东坡肉的主料和造型大同小异，主料都是半肥半瘦的猪肉，成品菜都是码得整整齐齐的麻将块儿，红得透亮，色如玛瑙，夹起一块尝尝，软而不烂，肥而不腻。",
+				   				cookMethod:"做法一：食材：猪五花肋肉1500克、葱100克、白糖100克、绍酒250克、姜块（拍松）50克、酱油150克。步骤:1.将猪五花肋肉刮洗干净，切成10块正方形的肉块，放在沸水锅内煮5分钟取出洗净。2.取大砂锅一只，用竹箅子垫底，先铺上葱，放入姜块，再将猪肉皮面朝下整齐地排在上面，加入白糖、酱油、绍酒，最后加入葱结，盖上锅盖，用桃化纸围封砂锅边缝，置旺火上，烧开后加盖密封，用微火焖酥后，将近砂锅端离火口，撇去油，将肉皮面朝上装入特制的小陶罐中，加盖置于蒸笼内，用旺火蒸30分钟至肉酥透即成 [4]  。;做法二:食材:精五花肉600克，大枣6个，小香葱300克，姜20克，黄酒500ml，冰糖20克，白糖10克，红烧酱油100ml，盐3克。步骤:1.将姜洗净切成大片，小香葱洗净。2.五花肉切成 4厘米左右见方、大小均匀的小块。用线绳把每一块肉绑起来。3.将五花肉焯水后沥干水分。4.在砂锅的底部铺上竹篦子，在竹篦子上铺上一层小香葱。5.把焯水的五花肉，皮朝下码放在砂锅中。6.把姜片均匀的码在肉上。再铺上一层小香葱。加入冰糖和大枣。7.在加入盐、白糖、红烧酱油和黄酒，汤汁要和肉齐平。8.盖好盖子，中火烧开，转微火炖至2小时。9.将砂锅打开，去掉多余的小香葱。10.再将肉，轻轻的取出，放入蒸碗中，再浇上点炖肉的汤汁。11.入蒸锅，隔水蒸制1小时。12.出锅，即可食用 [5]  。"};
+			    $.get("show.tpl", function(result){
+			      var html = ejs.compile(result)(post);
+			      $("#main").html(html);
+			    });
+		
+		</script>
+	</body>
+</html>
